@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Hiragana Audio Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+    }
+    td, th {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: center;
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    td:hover {
+      background-color: #f0f0f0;
+    }
+    .empty {
+      background-color: #f9f9f9;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th></th><th>a</th><th>i</th><th>u</th><th>e</th><th>o</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th> </th>
+        <td data-sound="a">あ</td><td data-sound="i">い</td><td data-sound="u">う</td><td data-sound="e">え</td><td data-sound="o">お</td>
+      </tr>
+      <tr><th>k</th>
+        <td data-sound="ka">か</td><td data-sound="ki">き</td><td data-sound="ku">く</td><td data-sound="ke">け</td><td data-sound="ko">こ</td>
+      </tr>
+      <tr><th>s</th>
+        <td data-sound="sa">さ</td><td data-sound="shi">し</td><td data-sound="su">す</td><td data-sound="se">せ</td><td data-sound="so">そ</td>
+      </tr>
+      <tr><th>t</th>
+        <td data-sound="ta">た</td><td data-sound="chi">ち</td><td data-sound="tsu">つ</td><td data-sound="te">て</td><td data-sound="to">と</td>
+      </tr>
+      <tr><th>n</th>
+        <td data-sound="na">な</td><td data-sound="ni">に</td><td data-sound="nu">ぬ</td><td data-sound="ne">ね</td><td data-sound="no">の</td>
+      </tr>
+      <tr><th>h</th>
+        <td data-sound="ha">は</td><td data-sound="hi">ひ</td><td data-sound="fu">ふ</td><td data-sound="he">へ</td><td data-sound="ho">ほ</td>
+      </tr>
+      <tr><th>m</th>
+        <td data-sound="ma">ま</td><td data-sound="mi">み</td><td data-sound="mu">む</td><td data-sound="me">め</td><td data-sound="mo">も</td>
+      </tr>
+      <tr><th>y</th>
+        <td data-sound="ya">や</td><td class="empty"></td><td data-sound="yu">ゆ</td><td class="empty"></td><td data-sound="yo">よ</td>
+      </tr>
+      <tr><th>r</th>
+        <td data-sound="ra">ら</td><td data-sound="ri">り</td><td data-sound="ru">る</td><td data-sound="re">れ</td><td data-sound="ro">ろ</td>
+      </tr>
+      <tr><th>w</th>
+        <td data-sound="wa">わ</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td data-sound="wo">を</td>
+      </tr>
+      <tr><th>n</th>
+        <td data-sound="n">ん</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Audio elements -->
+  <audio id="a" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%82.mp3
+"></audio>
+  <audio id="i" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%84.mp3
+"></audio>
+  <audio id="u" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%86.mp3"></audio>
+  <audio id="e" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%88.mp3"></audio>
+  <audio id="o" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%8A.mp3"></audio>
+
+  <audio id="ka" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%8B.mp3"></audio>
+  <audio id="ki" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%8D.mp3"></audio>
+  <audio id="ku" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%8F.mp3"></audio>
+  <audio id="ke" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%91.mp3"></audio>
+  <audio id="ko" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%93.mp3"></audio>
+
+  <audio id="sa" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%95.mp3"></audio>
+  <audio id="shi" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%97.mp3"></audio>
+  <audio id="su" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%99.mp3"></audio>
+  <audio id="se" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%9B.mp3"></audio>
+  <audio id="so" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%9D.mp3"></audio>
+
+  <audio id="ta" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%9F.mp3"></audio>
+  <audio id="chi" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%A1.mp3"></audio>
+  <audio id="tsu" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%A4.mp3"></audio>
+  <audio id="te" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%A6.mp3"></audio>
+  <audio id="to" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%A8.mp3"></audio>
+
+  <audio id="na" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%AA.mp3"></audio>
+  <audio id="ni" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%AB.mp3"></audio>
+  <audio id="nu" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%AC.mp3"></audio>
+  <audio id="ne" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%AD.mp3"></audio>
+  <audio id="no" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%AE.mp3"></audio>
+
+  <audio id="ha" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%AF.mp3"></audio>
+  <audio id="hi" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%B2.mp3"></audio>
+  <audio id="fu" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%B5.mp3"></audio>
+  <audio id="he" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%B8.mp3"></audio>
+  <audio id="ho" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%BB.mp3"></audio>
+
+  <audio id="ma" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%BE.mp3"></audio>
+  <audio id="mi" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%81%BF.mp3"></audio>
+  <audio id="mu" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%80.mp3"></audio>
+  <audio id="me" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%81.mp3"></audio>
+  <audio id="mo" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%82.mp3"></audio>
+
+  <audio id="ya" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%84.mp3"></audio>
+  <audio id="yu" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%86.mp3"></audio>
+  <audio id="yo" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%88.mp3"></audio>
+
+  <audio id="ra" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%89.mp3"></audio>
+  <audio id="ri" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%8A.mp3"></audio>
+  <audio id="ru" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%8B.mp3"></audio>
+  <audio id="re" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%8C.mp3"></audio>
+  <audio id="ro" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%8D.mp3"></audio>
+
+  <audio id="wa" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%8F.mp3"></audio>
+  <audio id="wo" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%92.mp3"></audio>
+
+  <audio id="n" src="https://raw.githubusercontent.com/digitaIfabric/japanese/master/Hiragana-Samples/%E3%82%93.mp3"></audio>
+
+  <script>
+    document.querySelectorAll('td[data-sound]').forEach(cell => {
+      cell.addEventListener('click', () => {
+        const soundId = cell.getAttribute('data-sound');
+        const audio = document.getElementById(soundId);
+        if (audio) {
+          audio.currentTime = 0;
+          audio.play();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
